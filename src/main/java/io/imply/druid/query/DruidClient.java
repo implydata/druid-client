@@ -26,6 +26,7 @@ import com.google.inject.Key;
 import com.google.inject.Module;
 import com.metamx.common.guava.Sequence;
 import com.metamx.common.lifecycle.Lifecycle;
+import com.metamx.common.logger.Logger;
 import com.metamx.emitter.core.NoopEmitter;
 import com.metamx.emitter.service.ServiceEmitter;
 import com.metamx.http.client.HttpClient;
@@ -52,6 +53,8 @@ import java.util.Map;
 
 public class DruidClient implements Closeable
 {
+  private static final Logger log = new Logger(DruidClient.class);
+
   private static final Injector INJECTOR;
   private static final QueryToolChestWarehouse WAREHOUSE;
   private static final QueryWatcher WATCHER;
@@ -189,6 +192,7 @@ public class DruidClient implements Closeable
   public <T> Sequence<T> execute(final Query<T> query)
   {
     final Map<String, Object> context = Maps.newHashMap();
+    log.debug("Issuing query: %s", query);
     return directDruidClient.run(query, context);
   }
 
