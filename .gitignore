@@ -1,0 +1,15 @@
+dist
+target
+*.iml
+*.ipr
+*.iws
+*.tar.gz
+*.swp
+*.swo
+.classpath
+.idea
+.project
+.settings/
+*.log
+*.DS_Store
+_site
