@@ -17,6 +17,7 @@
 package io.imply.druid.query;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.common.base.Throwables;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Maps;
 import com.google.common.util.concurrent.ListenableFuture;
@@ -197,7 +198,12 @@ public class DruidClient implements Closeable
   public <T> Sequence<T> execute(final Query<T> query)
   {
     final Map<String, Object> context = Maps.newHashMap();
-    log.debug("Issuing query: %s", query);
+    try {
+      log.debug("Issuing query: %s", getJsonMapper().writeValueAsString(query));
+    }
+    catch (Exception e) {
+      throw Throwables.propagate(e);
+    }
     return directDruidClient.run(query, context);
   }
 
