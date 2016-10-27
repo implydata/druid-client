@@ -189,6 +189,11 @@ public class DruidClient implements Closeable
     return new DruidClient(directDruidClient, null);
   }
 
+  public ObjectMapper getJsonMapper()
+  {
+    return JSON_MAPPER;
+  }
+
   public <T> Sequence<T> execute(final Query<T> query)
   {
     final Map<String, Object> context = Maps.newHashMap();
