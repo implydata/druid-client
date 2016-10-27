@@ -19,4 +19,4 @@ the dependency:
 
 ### Example
 
-Check out ExampleMain.java for example code.
+Check out [ExampleMain.java](https://github.com/implydata/druid-client/blob/master/src/main/java/io/imply/druid/query/ExampleMain.java) for example code.
