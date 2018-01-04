@@ -16,18 +16,17 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.imply</groupId>
   <artifactId>druid-client</artifactId>
-  <version>0.9.1.1-1-SNAPSHOT</version>
+  <version>0.9.1.1-1</version>
 
   <scm>
     <connection>scm:git:https://github.com/implydata/druid-client.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/implydata/druid-client.git</developerConnection>
-    <tag>0.9.1.1</tag>
+    <tag>druid-client-0.9.1.1-1</tag>
   </scm>
 
   <properties>
