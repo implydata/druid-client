@@ -22,7 +22,7 @@
 
   <groupId>io.imply</groupId>
   <artifactId>druid-client</artifactId>
-  <version>0.9.1.1-SNAPSHOT</version>
+  <version>0.11.0-1-SNAPSHOT</version>
 
   <scm>
     <connection>scm:git:https://github.com/implydata/druid-client.git</connection>
@@ -32,7 +32,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <druid.version>0.9.1.1</druid.version>
+    <druid.version>0.11.0</druid.version>
   </properties>
 
   <dependencies>
