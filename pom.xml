@@ -22,12 +22,12 @@
 
   <groupId>io.imply</groupId>
   <artifactId>druid-client</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.9.1.1-1-SNAPSHOT</version>
 
   <scm>
     <connection>scm:git:https://github.com/implydata/druid-client.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/implydata/druid-client.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>0.9.1.1</tag>
   </scm>
 
   <properties>
